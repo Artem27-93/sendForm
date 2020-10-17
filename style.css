@@ -1,8 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1{
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(13, 80, 7);
+    
+}
 .form{
-    width: 300px;
-    min-height: 400px;
+    width: 350px;
+    height: 400px;
+    margin:40px auto;
     border: solid 1px #000;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px rgba(6, 27, 16, 0.8);
     text-align: center;
+    background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #13745b);
+    color: rgb(13, 80, 7);
+    font-family: 'Roboto', sans-serif;
 }
+input{
+    text-align: center;
+    width: 60%;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.btn{
+        width: 100px;
+        height: 40px;
+        font-weight: 500;
+        color: beige;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        padding: .8em 1em calc(.8em + 3px);
+        border-radius: 10px;
+        background: rgb(64,199,129);
+        box-shadow: 0 -3px rgb(53,167,110) inset;
+        transition: 0.2s;
+        cursor: pointer;
+      } 
+.btn:hover { background: rgb(53, 167, 110);}
+.btn:active {
+        background: rgb(33,147,90);
+        box-shadow: 0 3px rgb(33,147,90) inset;
+      }
+
+
+.dbase{
+    display: block;
+    
+}
+table {
+    margin: auto;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    th, td:first-child {
+    background: #AFCDE7;
+    color: white;
+    padding: 10px 20px;
+    }
+    th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    }
+    td {
+    background: #D8E6F3;
+    }
+    th:first-child, td:first-child {
+    text-align: left;
+    }

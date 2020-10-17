@@ -1,16 +1,16 @@
 <table>
             <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>surname</th>
-                <th>salary</th>
-                <th>birth</th>
+                <th>Id</th>
+                <th>First_name</th>
+                <th>Last_name</th>
+                <th>Patronymic</th>
+                <th>DOB</th>
             </tr>
 <?php
 
 $postParam = file_get_contents("php://input");
 $input=json_decode($postParam,JSON_UNESCAPED_UNICODE);
-echo (var_dump($input));
+// echo (var_dump($input));
 
 
 $host = 'localhost'; //имя хоста, на локальном компьютере это localhost
@@ -36,7 +36,7 @@ if (!empty($input)) {
 		$query = "SELECT * FROM test_table";
 		$result = mysqli_query($link, $query) or die( mysqli_error($link) );
 		for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row);
-        var_dump($data); 
+        
 // Вывод на экран:
 $result = '';
 		foreach ($data as $elem) {
@@ -51,7 +51,7 @@ $result = '';
 	
 	echo $result;
 
-// die();
+die();
 ?>
  </table>
 
